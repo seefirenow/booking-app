@@ -16,7 +16,9 @@ const Navbar = () => {
         ) : (
           <div className="navItems">
             <button className="navButton">Rejestracja</button>
-            <button className="navButton">Logowanie</button>
+            <Link to="/login">
+              <button className="navButton">Logowanie</button>
+            </Link>
           </div>
         )}
       </div>
