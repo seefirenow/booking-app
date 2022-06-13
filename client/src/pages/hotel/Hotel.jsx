@@ -98,7 +98,8 @@ const Hotel = () => {
             </div>
           )}
           <div className="hotelWrapper">
-            <button className="bookNow">
+            <button onClick={handleClick} className="bookNow">
+              {" "}
               Zarezerwuj albo zabookuj już teraz!
             </button>
             <h1 className="hotelTitle">{data.name}</h1>
@@ -134,7 +135,8 @@ const Hotel = () => {
                 <h1>Najlepiej opłaca się na {days}-noce!</h1>
                 <span></span>
                 <h2>
-                  <b>{days * 6 * options.room} zł</b> ({days} zł noc)
+                  <b>{days * data.cheapestPrice * options.room} zł</b> ({days}{" "}
+                  noce)
                 </h2>
                 <button onClick={handleClick}>
                   {" "}

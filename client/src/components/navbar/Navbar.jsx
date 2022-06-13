@@ -15,7 +15,6 @@ const Navbar = () => {
           user.username
         ) : (
           <div className="navItems">
-            <button className="navButton">Rejestracja</button>
             <Link to="/login">
               <button className="navButton">Logowanie</button>
             </Link>

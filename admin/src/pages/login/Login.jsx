@@ -31,7 +31,7 @@ const Login = () => {
       } else {
         dispatch({
           type: "LOGIN_FAILURE",
-          payload: { message: "You are not allowed!" },
+          payload: { message: "Nie masz dostępu" },
         });
       }
     } catch (err) {
